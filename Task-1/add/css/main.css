@@ -1,0 +1,158 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0
+}
+
+.page {
+    overflow: hidden;
+}
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    height: 100px;
+}
+
+nav {
+    width: 420px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #929292;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+nav a:hover {
+    color: #0f7bff;
+}
+
+.header-logo {
+    background: url('../img/header/header-logo.jpg') center no-repeat;
+    background-size: contain;
+    width: 140px;
+    
+    color: white;
+    text-align: center;
+}
+
+.header-btn {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #0063dd;
+    border: 2px solid #0063dd;
+    border-radius: 50px;
+}
+
+.header-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #0063dd;
+}
+
+
+/*INTRO*/
+
+.intro {
+    min-height: 100vh;
+    background: url('../img/intro-bg.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: space-around
+}
+
+.intro-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    color: #0063dd;
+    border: 2px solid #0063dd;
+    font-weight: 700;
+}
+
+.intro-btn:hover {
+    background-color: #0063dd;
+    color: white;
+    cursor: pointer;
+}
+
+.intro-imgs {
+    position: relative;
+}
+
+.intro-img-item:first-child {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 300px;
+}
+
+.intro-img-item:nth-child(2) {
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 100px;
+    width: 200px;
+}
+
+.intro-img-item:nth-child(3) {
+/*    position: absolute;*/
+    z-index: 100;
+    top: 0;
+    left: 300px;
+}
+
+.img-block {
+    position: relative;
+    height: 600px;
+    width: 350px;
+    left: 0;
+}
+
+.intro-device {
+    position: absolute;
+    width: 350px;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.intro-device-sensor {
+    position: absolute;
+    top: 0;
+    z-index: 1001;
+    left: 145px;
+    top: 55px;
+    
+}
+
+.intro-device-screen {
+    position: absolute;
+    z-index: 1000;
+    left: 55px;
+    top: 55px;
+    width: 240px;
+}
