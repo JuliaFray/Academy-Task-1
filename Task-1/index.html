@@ -5,6 +5,7 @@
         <meta name = 'viewport' content = 'width=device-width, initial-scale = 1'>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel='stylesheet' type='text/css' href='add/css/main.css'>
+        <script src="https://kit.fontawesome.com/56864f7d8e.js" crossorigin="anonymous"></script>
         <title>AppSon</title>
     </head>
     
@@ -63,13 +64,17 @@
                         
                     </div>
                     
+                    
                 </div>
+                <button class = 'scroll-btn' data-scroll = '#analysis'>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
             </div><!--Intro-->
             
              <div class = 'features'>
                  <div class = 'container'>
-                     
-                     <div class = 'features-item'>
+                     <div class = 'features-items'>
+                         <div class = 'features-item'>
                          <img src = "add/img/features-icon-1.png">
                          <span class = 'features-item-title'>Analysis</span>
                          <p class = 'features-item-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -86,6 +91,9 @@
                          <span>Messaging</span>
                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                      </div>
+                     </div>
+                     
+                     
                 </div>
             </div><!--Features-->
             
@@ -100,7 +108,7 @@
                         <div class = 'col-text'>
                             <h2>Easy Messaging</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button>Read more</button>
+                        <button class = 'read-btn'>Read more <i class="fas fa-arrow-right"> </i></button>
                         </div>
                         
                     </div>
@@ -108,7 +116,7 @@
                         <div class = 'col-text'>
                             <h2>Keep In Touch</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button>Read more</button>
+                        <button class = 'read-btn'>Read more <i class="fas fa-arrow-right"> </i></button>
                         </div>
                          <div class = 'col-pic'>
                              <img class = 'col-pic-bg' src = "add/img/description.svg">
@@ -124,22 +132,26 @@
                 <div class = 'container'>
                     <h2>How Does it works?</h2>
                     <p class = 'works-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+                    
                     <div class = 'works-order'>
+                        
+                        <hr class = 'works-line'>
                         <div class = 'works-order-item'>
                             <img src="add/img/works-1.png">
                             <h3 class = 'works-title'>Create an account</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            <p class = 'works-item-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                         </div>
                         <div class = 'works-order-item'>
                             <img src="add/img/works-2.png">
                             <h3 class = 'works-title'>Confirm Email</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            <p class = 'works-item-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                         </div>
                         <div class = 'works-order-item'>
                             <img src="add/img/works-3.png">
                             <h3 class = 'works-title'>See Reasults</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            <p class = 'works-item-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                         </div>
+                        
                     </div>
                 </div>
             </div><!--Works-->
@@ -153,32 +165,37 @@
                         <div class = 'pricing-plan'>
                         <h2>Pricing plan</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
-                        <button>Monthly</button>
-                        <button>Yearly</button>
+                            <div class = 'pricing-btns'>
+                                <button class = 'pricing-plan-btn btn-left'>Monthly</button>
+                        <button class = 'pricing-plan-btn btn-right'>Yearly</button>
+                            </div>
+                        
                     </div>
                         
                         <div class = 'pricing-item'>
                             <img src="add/img/pricing-1.png">
                         <h3>Standard</h3>
+                            <hr>
                         <p>2gb Hosting</p>
                         <p>10 Custom Domain</p>
                         <p>SSD Hosting</p>
                         <p>50 gb Bandwith</p>
                         <p>Free Support</p>
-                        <span>19.00</span>
-                        <button>Try now</button>
+                        <span><i class="fas fa-dollar-sign"></i> 19.00</span>
+                        <button class = 'pricing-btn'>Try now</button>
                     </div>
                     
                     <div class = 'pricing-item'>
                         <img src="add/img/pricing-2.png">
                         <h3>Premium</h3>
+                         <hr>
                         <p>2gb Hosting</p>
                         <p>10 Custom Domain</p>
                         <p>SSD Hosting</p>
                         <p>50 gb Bandwith</p>
                         <p>Free Support</p>
-                        <span>19.00</span>
-                        <button>Try now</button>
+                        <span> <i class="fas fa-dollar-sign"></i> 49.00</span>
+                        <button class = 'pricing-btn'>Try now</button>
                     </div>
                     </div>
                     
@@ -198,20 +215,20 @@
                 <div class = 'reviews-items'>
                     
                     <div class = reviews-item>
-                        <span>Raisa Moni</span>
-                        <span>envanto customer</span>
+                        <span class = 'review-author'>Raisa Moni <i class="fab fa-twitter"></i></span>
+                        <span class = 'review-job'>envanto customer</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
                     </div>
                     
                     <div class = reviews-item>
-                        <span>Raisa Moni</span>
-                        <span>envanto customer</span>
+                        <span class = 'review-author'>Raisa Moni <i class="fab fa-twitter"></i></span>
+                        <span class = 'review-job'>envanto customer</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
                     </div>
                     
                     <div class = reviews-item>
-                        <span>Raisa Moni</span>
-                        <span>envanto customer</span>
+                        <span class = 'review-author'>Raisa Moni <i class="fab fa-twitter"></i></span>
+                        <span class = 'review-job'>envanto customer</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.</p>
                     </div>
                     </div>
