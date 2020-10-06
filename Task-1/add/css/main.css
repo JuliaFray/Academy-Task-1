@@ -1,3 +1,9 @@
+/*
+* {
+    border: 1px dotted red;
+}
+*/
+
 body {
     font-family: 'Quicksand', sans-serif;
     padding: 0;
@@ -115,14 +121,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 55px;
     padding-top: 205px;
     position: relative;
     overflow: hidden;
-}
-
-.intro .title {
-    word-spacing: 15px;
+    margin: 0 auto
 }
 
 .intro .container span {
@@ -271,11 +273,12 @@ nav a:hover {
 
 .features-item {
     margin-right: 30px;
-    width: 360px;
-    height: 280px;
+    width: 30%;
+    height: 300px;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+    padding-bottom: 25px;
 }
 
 .features-item:nth-last-of-type(2){
@@ -295,12 +298,11 @@ nav a:hover {
     padding-bottom: 25px;
 }
 
-.features-item span {
-    font-weight: 500;
+.features-item-title {
+    font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     color: #333333;
-    
 }
 
 .features-item p {
@@ -308,9 +310,7 @@ nav a:hover {
     font-size: 16px;
     line-height: 27px;
     color: #333333;
-    width: 340px;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 25px 30px 25px 30px;
 }
 
 /*DESCRIPTION*/
@@ -322,7 +322,7 @@ nav a:hover {
 .description-item {
     display: flex;
     align-items: center;
-    height: 540px;
+    height: 555px;
 }
 
 .col-text {
@@ -381,22 +381,19 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.col-text h2 {
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 700;
-}
-
 .col-text p {
     font-size: 16px;
     line-height: 27px;
+    margin: 40px 0;
 }
 
 .read-btn {
     border: none;
     background-color: #fff;
     color: #0f7bff;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-family: 'Quicksand';
+    font-weight: 500;
 }
 
 .read-btn:hover {
@@ -439,9 +436,9 @@ nav a:hover {
 
 .works-order::after {
     content: '';
-    width: 75%;
+    width: 70%;
     height: 2px;
-    background-color: blue;
+    background-color: #0f7bff;
     position: absolute;
     left: 130px;
     top: 50px;
@@ -449,10 +446,10 @@ nav a:hover {
 
 .works-order-item {
     width: 30%;
-    height: 250px;
     margin-right: 55px;
     text-align: center;
     z-index: 10;
+    padding-bottom: 20px;
 }
 
 .works-order-item:last-child {
@@ -465,7 +462,7 @@ nav a:hover {
 
 .works-item-text {
     display: inline-block;
-    width: 360px;
+    width: 90%;
     font-size: 16px;
     line-height: 27px;
     height: 50px;
@@ -485,7 +482,7 @@ nav a:hover {
 }
 
 .pricing-item hr {
-    width: 165px;
+    width: 55%;
     color: #e0e0e0;
 }
 
@@ -496,7 +493,7 @@ nav a:hover {
     
 }
 
-.pricing-plan h2 {
+.title {
     margin-top: 165px;
     font-size: 32px;
     line-height: 36px;
@@ -562,8 +559,9 @@ nav a:hover {
     margin: 20px;
     text-align: center;
     padding: 10px;
-    height: 580px;
+/*    height: 580px;*/
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .pricing-plan {
@@ -593,6 +591,10 @@ nav a:hover {
 
 .pricing p {
     color: #929292;
+}
+
+.pricing p:last-of-type{
+    margin-bottom: 30px
 }
 
 
@@ -628,6 +630,8 @@ nav a:hover {
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 55px;
+    margin: 0;
+    margin-bottom: 55px;
 }
 
 .reviews-items {
@@ -637,11 +641,11 @@ nav a:hover {
 
 .reviews-item {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-   width: 360px;
+    width: 360px;
     height: 210px;
     background-color: #fff; 
     margin-right: 30px;
-    padding: 35px;
+    padding: 30px;
 }
 
 .reviews-item span {
@@ -669,6 +673,16 @@ nav a:hover {
 .reviews-item p {
     color: #929292;
 }
+
+.reviews-scroll {
+    margin-top: 50px;
+}
+
+.reviews-scroll  img {
+    margin: 0 5px;
+}
+
+
 /*NEWS*/
 
 .news {
@@ -676,19 +690,36 @@ nav a:hover {
     padding-bottom: 130px;
 }
 
-.news .container {
-    text-align: center; 
+.news .title {
+    margin: 0;
+    text-align: center;
 }
+
+.news-text {
+    position: relative;
+}
+
+.news .title-img {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -54px;
+    z-index: -1;
+}
+
 
 .news-text {
     width: 750px;
     margin: 0 auto;
     padding-top: 35px;
     padding-bottom: 50px;
+    text-align: center; 
 }
 
 .news-items {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 
 .news-item {
@@ -696,7 +727,11 @@ nav a:hover {
 }
 
 .col2 {
-    width: 50%
+    width: 50%;
+}
+
+.main-news-item {
+    width: 99%;
 }
 
 .news-item-text {
@@ -721,7 +756,7 @@ nav a:hover {
 .news-btn {
     border: none;
     background: none;
-    color: blue;
+    color: #0f7bff;
     text-transform: capitalize;
     float: left;
     font-size: 16px;
@@ -733,7 +768,7 @@ nav a:hover {
 }
 
 .news-title {
-    color: blue;
+    color: #0f7bff;
     text-align: left;
     font-size: 24px;
     line-height: 27px;
@@ -750,10 +785,15 @@ nav a:hover {
 .trial .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .trial-text{
     display: inline-block;
+}
+
+.trial-text .title {
+    margin-top: 0;
 }
 
 .trial-btn {
@@ -870,6 +910,27 @@ nav a:hover {
     .nav {
         margin-right: 50px;
     }
+    
+    .description-item {
+        overflow: hidden
+    }
+    
+    .reviews {
+        padding-bottom: 130px;
+    }
+    
+    .pricing-plan-btn {
+        width: 120px;
+    }
+    
+    .testimonials-img {
+        display: none;
+    }
+    
+    .col2 {
+        
+    }
+    
 }
 
 @media (max-width: 1024px) {
@@ -880,10 +941,10 @@ nav a:hover {
     }
 
     .intro .container {
-        width: 1024px;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding-left: 0
+        padding-right: 0
     }
 
     .features-items {
@@ -904,23 +965,53 @@ nav a:hover {
         justify-content: space-between
     }
 
-    .col-pic {
-        width: 40%;
+    .col-text {
+        width: 60%;
+    }
+    
+    .col-text:first-child {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
-    .col-text {
-        width: 40%;
-
+    .col-text:last-child {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .col-pic {
+        width: 40%
+    }
+    
+    .col-pic2 {
+        display: none;
+    }
+    
+    .col-pic-bg {
+        display: none;
+    }
+    
+    .col-pic:last-child .col-pic1,
+    .col-pic:first-child .col-pic1{
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
     }
 
     .works-order {
         margin-left: 40px;
         margin-right: 100px;
     }
+    
+    .works-order-item {
+        height: auto;
+        padding-bottom: 10px
+    }
 
     .works-item-text {
         padding: 0;
-        text-align: left
+        text-align: left;
+        width: 90%;
     }
     
 
@@ -953,9 +1044,7 @@ nav a:hover {
         padding-top: 130px;
     }
 
-    .testimonials-img {
-        display: none;
-    }
+    
 
     .testimonials-text {
         width: 100%;
@@ -983,16 +1072,13 @@ nav a:hover {
     }
 
     .col2 {
-        width: 45%;
-        margin-right: 20px;
-    }
-
-    .col2:first-child img {
-        width: 90%;
+        width: 50%;
     }
 
     .trial {
         padding: 130px 100px;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer {
@@ -1147,6 +1233,26 @@ nav a:hover {
 
     .works-order::after {
         width: 70%
+    }
+    
+    .news-items {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .col2 {
+        width: 100%;
+    }
+    
+    .footer-input {
+        width: 50%;
+    }
+    
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
     }
 
 }
