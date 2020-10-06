@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 27px;
+    box-sizing: padding-box
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     overflow: hidden;
+    
 }
 
 h1, h2, h3 {
@@ -24,6 +26,7 @@ h1, h2, h3 {
 .title {
     font-size: 32px;
     line-height: 36px;
+    text-transform: capitalize
 }
 
 /*HEADER*/
@@ -69,6 +72,7 @@ nav a:hover {
 
 .header-btn {
     margin-top: 25px;
+    text-transform: uppercase
 }
 
 .header-logo {
@@ -288,7 +292,7 @@ nav a:hover {
     display: block;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .features-item span {
@@ -296,6 +300,7 @@ nav a:hover {
     font-size: 18px;
     line-height: 27px;
     color: #333333;
+    
 }
 
 .features-item p {
@@ -303,6 +308,9 @@ nav a:hover {
     font-size: 16px;
     line-height: 27px;
     color: #333333;
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 /*DESCRIPTION*/
@@ -388,6 +396,7 @@ nav a:hover {
     border: none;
     background-color: #fff;
     color: #0f7bff;
+    text-transform: capitalize
 }
 
 .read-btn:hover {
@@ -484,6 +493,7 @@ nav a:hover {
     width: 360px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .pricing-plan h2 {
@@ -491,38 +501,57 @@ nav a:hover {
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
+    text-align: left
 }
 
 .pricing-btns {
     margin: 0 auto;
     margin-top: 30px;
+    padding: 0;
 }
 
 .pricing-plan-btn {
     display: inline-block;
     width: 160px;
     height: 50px;
-    background-color: #0f7bff;
-    border: 1px solid #0f7bff;
-    color: white;
+    
     font-size: 16px;
     line-height: 27px;
 }
 
-.pricing-plan-btn:hover {
+.btn-left:hover {
     color: #0f7bff;
     background-color: #fff;
     cursor: pointer;
 }
 
+.btn-right:hover {
+    color: #fff;
+    background-color: #0f7bff;
+    cursor: pointer;
+}
+
+.pricing-plan p {
+    text-align: left
+}
+
 .btn-left {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+    background-color: #0f7bff;
+    border: 1px solid #0f7bff;
+    color: white;
 }
 
 .btn-right {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    background-color: #fff;
+    border: 1px solid #0f7bff;
+    color: #0f7bff;
+    margin-left: -10px;
 }
 
 
@@ -534,6 +563,12 @@ nav a:hover {
     text-align: center;
     padding: 10px;
     height: 580px;
+    padding-top: 40px;
+}
+
+.pricing-plan {
+    border: none;
+    box-shadow: none
 }
 
 .pricing-btn {
@@ -637,17 +672,12 @@ nav a:hover {
 /*NEWS*/
 
 .news {
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 130px;
 }
 
 .news .container {
     text-align: center; 
-}
-
-.news h2 {
-    font-size: 32px;
-    line-height: 36px;
 }
 
 .news-text {
@@ -661,6 +691,10 @@ nav a:hover {
     display: flex;
 }
 
+.news-item {
+    margin-bottom: 15px;
+}
+
 .col2 {
     width: 50%
 }
@@ -672,13 +706,16 @@ nav a:hover {
 .news-item-img {
     width: 30%;
     display: inline-block;
+    margin: 0 auto;
+    margin-right: 20px;
+    vertical-align: middle
 }
 
 .news-item-col {
     width: 60%;
     display: inline-block;
     text-align: left;
-
+    vertical-align: middle
 }
 
 .news-btn {
@@ -689,6 +726,10 @@ nav a:hover {
     float: left;
     font-size: 16px;
     line-height: 27px;
+}
+
+.news-btn:hover {
+    cursor: pointer;
 }
 
 .news-title {
@@ -708,13 +749,7 @@ nav a:hover {
 
 .trial .container {
     display: flex;
-    justify-content: space-between;
-}
-
-.trial h2 {
-    font-size: 32px;
-    line-height: 36px;
-    text-transform: capitalize;
+    justify-content: space-around;
 }
 
 .trial-text{
@@ -728,7 +763,14 @@ nav a:hover {
     color: white;
     font-size: 16px;
     line-height: 27px;
+    border: 1px solid #0f7bff;
     border-radius: 5px;
+}
+
+.trial-btn:hover {
+    color: #0f7bff;
+    background-color: #fff;
+    cursor: pointer
 }
 
 
@@ -737,7 +779,6 @@ nav a:hover {
 .footer {
     background-color: #0f7bff;
     padding-top: 130px;
-    padding-bottom: 130px;
     color: white;
     text-align: center;
 }
@@ -745,12 +786,13 @@ nav a:hover {
 .footer-logo {
     font-size: 36px;
     line-height: 24px;
+    padding-top: 10px;
 }
 
 
 .footer-input {
     border: 1px solid #fff;
-    background-color: blue;
+    background-color: #0f7bff;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     height: 50px;
@@ -758,21 +800,28 @@ nav a:hover {
     text-transform: capitalize;
     margin-right: 0;
     padding-left: 20px;
-    color: #fff
+    color: #fff;
+    margin-right: -10px;
 }
 
 .footer-btn {
     border: 1px solid #fff;
     background-color: #fff;
-    color: blue;
+    color: #0f7bff;
     width: 200px;
-    height: 55px;
+    height: 54px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     text-transform: uppercase;
     margin-left: 0;
     margin-bottom: 100px;
     margin-top: 40px;
+}
+
+.footer-btn:hover {
+    color: #fff;
+    background-color: #0f7bff;
+    cursor: pointer
 }
 
 .footer-line {
@@ -796,13 +845,13 @@ nav a:hover {
     width: 50px;
     height: 50px;
     background-color: #fff;
-    border: 1px solid blue;
-    color: blue
+    border: 1px solid #0f7bff;
+    color: #0f7bff
 }
 
 .footer-up-btn:hover {
     cursor: pointer;
-    background-color: blue;
+    background-color: #0f7bff;
     color: #fff;
 }
 
@@ -817,13 +866,24 @@ nav a:hover {
     .header-logo {
         margin-left: 20px;
     }
+
+    .nav {
+        margin-right: 50px;
+    }
 }
 
 @media (max-width: 1024px) {
     
     
-    nav {
-        padding-left: 0px;
+    .nav {
+        margin-right: 100px;
+    }
+
+    .intro .container {
+        width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0
     }
 
     .features-items {
@@ -868,15 +928,24 @@ nav a:hover {
         width: 30%;
     }
 
+    .pricing-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+    }
+
     .btn-left {
         margin-bottom: 30px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
     .btn-right {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        padding: 0;
+        margin: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
     }
 
     .reviews {
@@ -904,9 +973,9 @@ nav a:hover {
     }
 
     .reviews-item {
-        width: 30%;
+        width: 29%;
         margin: 0 auto;
-        padding: 0;
+        padding: 10px;
     }
 
     .news {
@@ -926,6 +995,11 @@ nav a:hover {
         padding: 130px 100px;
     }
 
+    .footer {
+        width: 100%;
+        font-size: 14px;
+    }
+
 
 }
 
@@ -934,6 +1008,12 @@ nav a:hover {
 
     .nav {
         display: none;
+    }
+
+    .intro .container {
+        padding-left: 0;
+        width: 100%;
+        margin: 0 auto
     }
 
     .burger {
@@ -984,6 +1064,7 @@ nav a:hover {
         background-color: #fff;
         position: absolute;
         top: 0;
+        left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1053,19 +1134,21 @@ nav a:hover {
     .works-order-item {
         width: 30%;
         padding: 0;
-        margin: 0
+        margin: 0;
+        height: auto
     }
 
     .works-item-text {
-        text-align: left;
+        text-align: center;
         width: 90%;
+        margin: 10px;
+
     }
 
     .works-order::after {
         width: 70%
     }
 
-    
 }
 
 @media (max-width: 650px) {
@@ -1272,6 +1355,57 @@ nav a:hover {
 
     .features-item:last-child {
         padding-bottom: 20px;
+    }
+
+    .features-item {
+        width: 95%;
+    }
+
+    .features-item .features-item-text {
+        width: 90%
+    }
+
+    .description .container {
+        padding: 0;
+        margin: 0
+    }
+
+    .description-item {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .works {
+        padding: 60px 0;
+        margin: 0;
+    }
+
+    .pricing {
+        padding: 60px 0;
+        margin: 0;
+    }
+
+    .reviews {
+        padding: 60px 0;
+    }
+
+    .news {
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding-top: 60px;
+    }
+
+
+    .trial {
+        padding: 60px 20px;
+        text-align: center
+    }
+
+    .trial-btn {
+        margin: 0 auto
     }
 
     

@@ -12,7 +12,18 @@ function toggleMenu() {
     nav.classList.toggle('nav-burger')
 }
 
-burgerMenu.addEventListener('click', () => {toggleMenu()})
+burgerMenu.addEventListener('click', () => {toggleMenu()});
+
+var homeAnchor = document.getElementById('home');
+var home = document.querySelector('.intro');
+
+var featuresAnchor = document.getElementById('features');
+
+var pricingAnchor = document.getElementById('pricing');
+var pricing = document.querySelector('.pricing');
+
+var pagesAnchor = document.getElementById('pages');
+var pages = document.querySelector('.news');
 
 function scrollTo(element) {
     window.scroll({
@@ -24,3 +35,7 @@ function scrollTo(element) {
 
 scrollDown.addEventListener('click', () => {scrollTo(features)});
 scrollUp.addEventListener('click', () => {scrollTo(header)});
+homeAnchor.addEventListener('click', () => {scrollTo(home)});
+pricingAnchor.addEventListener('click', () => {scrollTo(pricing)});
+featuresAnchor.addEventListener('click', () => {scrollTo(features)});
+pagesAnchor.addEventListener('click', () => {scrollTo(pages)});
