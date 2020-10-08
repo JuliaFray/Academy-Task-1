@@ -39,3 +39,20 @@ homeAnchor.addEventListener('click', () => {scrollTo(home)});
 pricingAnchor.addEventListener('click', () => {scrollTo(pricing)});
 featuresAnchor.addEventListener('click', () => {scrollTo(features)});
 pagesAnchor.addEventListener('click', () => {scrollTo(pages)});
+
+
+var clientHeight = window.document.documentElement.clientHeight; 
+var clientOffset = window.document.documentElement.scrollTop;
+var scrollBtn = document.querySelector('.footer-up-btn');
+
+function checkScroll (clientOffset) {
+    if (clientOffset >= clientHeight) {
+        scrollBtn.classList.add('footer-btn-visible')
+    } else {
+        scrollBtn.classList.remove('footer-btn-visible')
+    }
+}
+window.addEventListener('scroll', function() {
+    var clientOffset = window.document.documentElement.scrollTop;
+    checkScroll(clientOffset);
+})
